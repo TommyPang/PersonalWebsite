@@ -93,9 +93,9 @@ nav a:hover::before {
     float: left;
 }
 
-.copyright-text {
-    position: absolute;
-    bottom: 0;
+.copyright-section {
+    position: relative;
     width: 100%;
     text-align: center;
+    padding-top: 3%;
 }
