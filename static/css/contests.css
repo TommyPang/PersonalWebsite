@@ -67,4 +67,6 @@ nav a:hover::before {
     width: 100%;
 }
 
-
+.copyright-text {
+    text-align: center;
+}

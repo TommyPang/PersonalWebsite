@@ -68,7 +68,7 @@ nav a:hover::before {
 }
 
 .sidebar {
-    max-width: 300px;
+    max-width: 20%;
     margin: 8% auto auto 8%;
     text-align: left;
     float: left;
@@ -79,13 +79,23 @@ nav a:hover::before {
     text-decoration: none;
     font-size: 22px;
     color: #867979 !important;
-
 }
 
-.main {
-    padding-left: 300px;
-    width: 900px;
+.main-body {
     display: inline-block;
-    padding-top: 8%;
+    position: absolute;
+    top:25%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
     color: #867979;
+    width: 40%;
+}
+
+.copyright-text {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }

@@ -75,3 +75,10 @@ nav a:hover::before {
 .title {
     padding-left: 20%; padding-top: 3%;
 }
+
+.copyright-text {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
