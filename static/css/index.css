@@ -84,10 +84,6 @@ nav a:hover::before {
     margin: 5% auto auto 25%;
 }
 
-.card-title {
-    padding-left: 35%;
-}
-
 .avatar{
     width: 8%; height: 8%;
     float: left;
