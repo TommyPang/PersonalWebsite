@@ -82,6 +82,7 @@ nav a:hover::before {
 .card {
     width: 50%;
     margin: 5% auto auto 25%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .avatar{
