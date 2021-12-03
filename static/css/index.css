@@ -62,6 +62,40 @@ input[type=checkbox]{
     user-select: none;
 }
 
+/* Card/icons */
+
+.icon {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    color: #867979 !important;
+}
+
+.icon_list {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.card {
+    width: 50%;
+    margin: 5% auto auto 25%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.avatar {
+    width: 10%;
+    height: 10%;
+    float: left;
+}
+
+.copyright-section {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding-top: 5%;
+}
+
+
 /* APPLYING MEDIA QUERIES */
 @media (max-width: 768px) {
     .menu {
@@ -95,43 +129,16 @@ input[type=checkbox]{
     }
 
     .main {
-        padding-top: 25%;
+        margin-top: 200px;
     }
 
+    .card {
+        width: 90%;
+        margin: auto auto auto auto;
 
-
-
+    }
 }
 
 
-.icon {
-    text-decoration: none;
-    display: inline-block;
-    font-size: 22px;
-    color: #867979 !important;
-}
 
-.icon_list {
-    text-align: center;
-    margin-bottom: 3%;
-}
-
-.card {
-    width: 50%;
-    margin: 5% auto auto 25%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.avatar {
-    width: 10%;
-    height: 10%;
-    float: left;
-}
-
-.copyright-section {
-    position: relative;
-    width: 100%;
-    text-align: center;
-    padding-top: 3%;
-}
 
