@@ -10,11 +10,10 @@
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link rel="shortcut icon" type="image/jpg" href="static/images/avatar.jpg"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
 </head>
 <body>
 
-    <header>
+    <header class="header">
         <nav class="navbar">
             <!-- LOGO -->
             <div class="logo">Tommy Pang</div>
@@ -22,7 +21,7 @@
             <ul class="nav-links" style="padding-right: 10%;">
                 <!-- USING CHECKBOX HACK -->
                 <input type="checkbox" id="checkbox_toggle" />
-                <label for="checkbox_toggle" class="hamburger" >&#9776;</label>
+                <label for="checkbox_toggle" class="hamburger" onclick="f()">&#9776;</label>
                 <!-- NAVIGATION MENUS -->
                 <div class="menu">
                     <li><a href="index.html"> About Me </a></li>
@@ -75,7 +74,13 @@
     </div>
     <script>
         function f() {
-            $( document.getElementsByClassName("navbar") ).toggleClass( "open");
+            var top = parseInt( $(".main").css("marginTop") );
+            if (top===30) {
+                $('.main').css('margin-top', 200);
+            }
+            else {
+                $('.main').css('margin-top', 30);
+            }
         }
     </script>
 </body>
