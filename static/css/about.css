@@ -37,24 +37,30 @@ nav a {
 
 nav a:hover {
     color: #0077cc;
-    text-decoration: none;
 }
 /* Navigation Bar styles ends */
 
 /* Main section styles start */
 main {
     max-width: 800px;
-    text-align: left;
-}
-.main h2 {
-    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.main div ul li {
-    text-align: center;
+.about-me h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
+.about-me p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
 
+.about-me p:last-of-type {
+    margin-bottom: 0;
+}
 /* Main section styles end */
 
 /* Footer styles starts*/

@@ -1,267 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contest History</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="static/css/contests.css" rel="stylesheet" type="text/css">
-    <link rel="shortcut icon" type="image/jpg" href="static/images/avatar.jpg"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="static/js/navbar.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contest History</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link href="static/css/contests.css" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" type="image/jpg" href="static/images/avatar.jpg"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="static/js/navbar.js"></script>
 
-</head>
+    </head>
     <body>
 
-    <header class="header">
-        <nav class="navbar">
-            <!-- LOGO -->
-            <div class="logo">Tommy Pang</div>
-            <!-- NAVIGATION MENU -->
-            <ul class="nav-links" style="padding-right: 10%;">
-                <!-- USING CHECKBOX HACK -->
-                <input type="checkbox" id="checkbox_toggle" />
-                <label for="checkbox_toggle" class="hamburger" onclick="f()">&#9776;</label>
-                <!-- NAVIGATION MENUS -->
-                <div class="menu">
-                    <li><a href="index.html"> Home </a></li>
-                    <li><a href="publications.html"> Publications </a></li>
-                    <li><a href="contests.html"> Contests </a></li>
-                    <li><a href="Tommy_s_Resume.pdf"> Resume </a></li>
-                    <li><a href="#"> Blog </a></li>
-                </div>
-            </ul>
-        </nav>
-    </header>
+        <header>
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger" onclick="f()">&#9776;</label>
+            <nav class="menu">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="project.html">Projects</a>
+                <a href="contests.html">Contests</a>
+                <a href="publications.html">Publications</a>
+            </nav>
+        </header>
 
-    <div class="main">
-        <h2>Programming Contests</h2>
-        <div>
-            <ul>
-                <li>
-                    <p>UCC Coding Competition(Spring Coding Bowl) 2021 - 20th place</p>
-                    <a href="https://ucccoders.github.io/contest/2021/results.pdf">Official Result</a>
-                    <img src="static/images/ucc.PNG" width="148" height="40">
-                </li>
-
-                <li>
-                    <p>AlgoManiac - Code For Future Division 2 - Global Rank: 72</p>
-                    <a href="https://www.codechef.com/rankings/CDMN21B?order=asc&search=saoge&sortBy=rank">Result</a>
-                    <img src="static/images/codechef.png" width="50" height="50">
-                </li>
-
-                <li>
-                    <p>CCC Contest 2022 - 149th place (top 4%) </p>
-                    <a href="https://cemc.uwaterloo.ca/contests/past_contests/2022/2022CCCResults.pdf">Official Result</a>
-                    <img src="static/images/cemc.png" width="48" height="41.5">
-                </li>
-
-                <li>
-                    <p>LeetCode Biweekly Contest 75 - Global Rank: 271/21911</p>
-                    <a href="https://leetcode.com/contest/biweekly-contest-75/ranking/">Result</a>
-                    <img src="static/images/leetcode.png" width="50" height="50">
-                </li>
-
-                <li>
-                    <p>CodeChef Starters 30 Division 3 - Global Rank: 166</p>
-                    <a href="https://www.codechef.com/rankings/START30C?order=asc&search=tommy_pang&sortBy=rank">Result</a>
-                    <img src="static/images/codechef.png" width="50" height="50">
-                </li>
-
-                <li>
-                    <p>Code: Nium Challenge - Global Rank: 174</p>
-                    <a href="https://www.codechef.com/NIUM2101?itm_campaign=contest_listing">Result</a>
-                    <img src="static/images/codechef.png" width="50" height="50">
-                </li>
-
-                <li>
-                    <p>LeetCode Weekly Contest 292 - Global Rank: 188/18870</p>
-                    <a href="https://leetcode.com/contest/weekly-contest-292/ranking/">Result</a>
-                    <img src="static/images/leetcode.png" width="50" height="50">
-                </li>
-
-                <li>
-                    <p>LeetCode Biweekly Contest 83 - Global Rank: 479/17435</p>
-                    <a href="https://leetcode.com/contest/biweekly-contest-83/ranking/">Result</a>
-                    <img src="static/images/leetcode.png" width="50" height="50">
-                </li>
-
-                <li>
-                    <p>Codeforces Educational Codeforces Round 128 - Global Rank: 1019/26814</p>
-                    <a href="https://codeforces.com/contest/1680/standings">Result</a>
-                    <img src="static/images/codeforces.png" width="200" height="25">
-                </li>
-
-                <li>
-                    <p>LeetCode Weekly Contest 295 - Global Rank: 494/23374</p>
-                    <a href="https://leetcode.com/contest/weekly-contest-295/ranking/">Result</a>
-                    <img src="static/images/leetcode.png" width="50" height="50">
-                </li>
-
-                <li>
-                    <p>LeetCode Weekly Contest 294 - Global Rank: 569/22271</p>
-                    <a href="https://leetcode.com/contest/weekly-contest-294/ranking/">Result</a>
-                    <img src="static/images/leetcode.png" width="50" height="50">
-                </li>
-
-                <li>
-                    <p>CodeChef Starters 18 Division 3 - Global Rank: 295</p>
-                    <a href="https://www.codechef.com/rankings/START18C?order=asc&search=saoge&sortBy=rank">Result</a>
-                    <img src="static/images/codechef.png" width="50" height="50">
-                </li>
-
-                <li>
-                    <p>LeetCode Weekly Contest 280 - Global Rank: 601/20923</p>
-                    <a href="https://leetcode.com/contest/weekly-contest-280/ranking/">Result</a>
-                    <img src="static/images/leetcode.png" width="50" height="50">
-                </li>
-
-                <li>
-                    <p>LeetCode Biweekly Contest 80 - Global Rank: 638/21911</p>
-                    <a href="https://leetcode.com/contest/biweekly-contest-80/ranking/">Result</a>
-                    <img src="static/images/leetcode.png" width="50" height="50">
-                </li>
-
-                <li>
-                    <p>Codeforces Round #790 - Global Rank: 1284/47565</p>
-                    <a href="https://codeforces.com/contest/1676/standings">Result</a>
-                    <img src="static/images/codeforces.png" width="200" height="25">
-                </li>
-
-                <li>
-                    <p>LeetCode Weekly Contest 289 - Global Rank: 728/18870</p>
-                    <a href="https://leetcode.com/contest/weekly-contest-289/ranking/">Result</a>
-                    <img src="static/images/leetcode.png" width="50" height="50">
-                </li>
-
-                <li>
-                    <p>LeetCode Biweekly Contest 73 - Global Rank: 692/18529</p>
-                    <a href="https://leetcode.com/contest/biweekly-contest-73/ranking/">Result</a>
-                    <img src="static/images/leetcode.png" width="50" height="50">
-                </li>
-
-                <li>
-                    <p>August Lunchtime 2021 Division 3 - Global Rank: 661</p>
-                    <a href="https://www.codechef.com/rankings/LTIME99C?order=asc&search=saoge&sortBy=rank">Result</a>
-                    <img src="static/images/codechef.png" width="50" height="50">
-                </li>
-
-                <li>
-                    <p>CodeChef Starters 14 Division 2 - Global Rank: 782</p>
-                    <a href="https://www.codechef.com/rankings/START14B?order=asc&search=saoge&sortBy=rank">Result</a>
-                    <img src="static/images/codechef.png" width="50" height="50">
-                </li>
-
-                <li>
-                    <p>Codeforces Round #792 - Global Rank: 1542/12816</p>
-                    <a href="https://codeforces.com/contest/1684/standings">Result</a>
-                    <img src="static/images/codeforces.png" width="200" height="25">
-                </li>
-
-                <li>
-                    <p>LeetCode Biweekly Contest 74 - Global Rank: 930/21911</p>
-                    <a href="https://leetcode.com/contest/biweekly-contest-74/ranking/">Result</a>
-                    <img src="static/images/leetcode.png" width="50" height="50">
-                </li>
-
-                <li>
-                    <p>LeetCode Weekly Contest 268 - Global Rank: 1318/11796</p>
-                    <a href="https://leetcode.com/contest/weekly-contest-268/ranking">Result</a>
-                    <img src="static/images/leetcode.png" width="50" height="50">
-                </li>
-
-                <li>
-                    <p>CCC Contest 2021 - 355th place (top 10%)</p>
-                    <a href="https://cemc.uwaterloo.ca/contests/past_contests/2021/2021CCCResults.pdf">Official Result</a>
-                    <img src="static/images/cemc.png" width="48" height="41.5">
-                </li>
-
-                <li>
-                    <p>SnackDown 2021 - Online Qualifiers - Global Rank: 1288</p>
-                    <a href="https://www.codechef.com/rankings/SNCKQL21?order=asc&search=saoge&sortBy=rank">Result</a>
-                    <img src="static/images/codechef.png" width="50" height="50">
-                </li>
-
-                <li>
-                    <p>SnackDown 2021 - Online Round 1A - Global Rank: 63</p>
-                    <a href="https://www.codechef.com/rankings/SNCK1A21?order=asc&search=saoge&sortBy=rank">Result</a>
-                    <img src="static/images/codechef.png" width="50" height="50">
-                </li>
-
-                <li>
-                    <p>C.O.D.E.R.S Division 2 - Global Rank: 883</p>
-                    <a href="https://www.codechef.com/rankings/FOUR21B?order=asc&search=saoge&sortBy=rank">Result</a>
-                    <img src="static/images/codechef.png" width="50" height="50">
-                </li>
-
-                <li>
-                    <p>LeetCode Weekly Contest 263 - Global Rank: 1268/11795</p>
-                    <a href="https://leetcode.com/contest/weekly-contest-263/ranking">Result</a>
-                    <img src="static/images/leetcode.png" width="50" height="50">
-                </li>
-
-                <li>
-                    <p>FizzBuzz Division 2 - Global Rank: 1543</p>
-                    <a href="https://www.codechef.com/rankings/FZBZ21B?order=asc&search=saoge&sortBy=rank">Result</a>
-                    <img src="static/images/codechef.png" width="50" height="50">
-                </li>
-
-
-            </ul>
-        </div>
-        <br>
-        <h2>Math Contests</h2>
-        <div>
-            <ul>
-
-                <li>
-                    <p>Canadian Senior Math Contest 2021 - 136th place (Top 1.1%)</p>
-                    <a href="https://cemc.uwaterloo.ca/contests/past_contests/2021/2021CxMCResults.pdf">Official Result</a>
-                    <img src="static/images/cemc.png" width="48" height="41.5">
-                </li>
-
-                <li>
-                    <p>Fermat Math Contest 2021 - 777th place (Top 5%)</p>
-                    <a href="https://cemc.uwaterloo.ca/contests/past_contests/2021/2021FermatResults.pdf">Official Result</a>
-                    <img src="static/images/cemc.png" width="48" height="41.5">
-                </li>
-
-                <li>
-                    <p>Hypatia Math Contest 2021 - 132th place (Top 1.8%)</p>
-                    <a href="https://cemc.uwaterloo.ca/contests/past_contests/2021/2021FGHResults.pdf">Official Result</a>
-                    <img src="static/images/cemc.png" width="48" height="41.5">
-                </li>
-
-                <li>
-                    <p>Euclid Math Contest 2021 - 502th place (Top 2.5%)</p>
-                    <a href="https://cemc.uwaterloo.ca/contests/past_contests/2021/2021EuclidResults.pdf">Official Result</a>
-                    <img src="static/images/cemc.png" width="48" height="41.5">
-                </li>
-
-            </ul>
-        </div>
-    </div>
-
-    <div class="copyright-section">
-        <footer class="copyright-text">
+        <div class="main">
+            <h2>Programming Contests</h2>
             <div>
-                <p>© Copyright 2021 Tommy Pang</p>
-            </div>
-        </footer>
-    </div>
+                <ul>
+                    <li>
+                        <p>UCC Coding Competition(Spring Coding Bowl) 2021 - 20th place</p>
+                        <a href="https://ucccoders.github.io/contest/2021/results.pdf">Official Result</a>
+                        <img src="static/images/ucc.PNG" width="148" height="40">
+                    </li>
 
-    <!--<script>
-        function f() {
-            var top = parseInt( $(".container").css("marginTop") );
-            if (top===30) {
-                $('.container').css('margin-top', 300);
-            }
-            else {
-                $('.container').css('margin-top', 30);
-            }
-        }
-    </script>-->
+                    <li>
+                        <p>AlgoManiac - Code For Future Division 2 - Global Rank: 72</p>
+                        <a href="https://www.codechef.com/rankings/CDMN21B?order=asc&search=saoge&sortBy=rank">Result</a>
+                        <img src="static/images/codechef.png" width="50" height="50">
+                    </li>
+
+                    <li>
+                        <p>CCC Contest 2022 - 149th place (top 4%) </p>
+                        <a href="https://cemc.uwaterloo.ca/contests/past_contests/2022/2022CCCResults.pdf">Official Result</a>
+                        <img src="static/images/cemc.png" width="48" height="41.5">
+                    </li>
+
+                    <li>
+                        <p>LeetCode Biweekly Contest 75 - Global Rank: 271/21911</p>
+                        <a href="https://leetcode.com/contest/biweekly-contest-75/ranking/">Result</a>
+                        <img src="static/images/leetcode.png" width="50" height="50">
+                    </li>
+
+                    <li>
+                        <p>CodeChef Starters 30 Division 3 - Global Rank: 166</p>
+                        <a href="https://www.codechef.com/rankings/START30C?order=asc&search=tommy_pang&sortBy=rank">Result</a>
+                        <img src="static/images/codechef.png" width="50" height="50">
+                    </li>
+
+                    <li>
+                        <p>Code: Nium Challenge - Global Rank: 174</p>
+                        <a href="https://www.codechef.com/NIUM2101?itm_campaign=contest_listing">Result</a>
+                        <img src="static/images/codechef.png" width="50" height="50">
+                    </li>
+
+                    <li>
+                        <p>LeetCode Weekly Contest 292 - Global Rank: 188/18870</p>
+                        <a href="https://leetcode.com/contest/weekly-contest-292/ranking/">Result</a>
+                        <img src="static/images/leetcode.png" width="50" height="50">
+                    </li>
+
+                    <li>
+                        <p>LeetCode Biweekly Contest 83 - Global Rank: 479/17435</p>
+                        <a href="https://leetcode.com/contest/biweekly-contest-83/ranking/">Result</a>
+                        <img src="static/images/leetcode.png" width="50" height="50">
+                    </li>
+
+                    <li>
+                        <p>Codeforces Educational Codeforces Round 128 - Global Rank: 1019/26814</p>
+                        <a href="https://codeforces.com/contest/1680/standings">Result</a>
+                        <img src="static/images/codeforces.png" width="200" height="25">
+                    </li>
+
+                    <li>
+                        <p>LeetCode Weekly Contest 295 - Global Rank: 494/23374</p>
+                        <a href="https://leetcode.com/contest/weekly-contest-295/ranking/">Result</a>
+                        <img src="static/images/leetcode.png" width="50" height="50">
+                    </li>
+
+                    <li>
+                        <p>LeetCode Weekly Contest 294 - Global Rank: 569/22271</p>
+                        <a href="https://leetcode.com/contest/weekly-contest-294/ranking/">Result</a>
+                        <img src="static/images/leetcode.png" width="50" height="50">
+                    </li>
+
+                    <li>
+                        <p>CodeChef Starters 18 Division 3 - Global Rank: 295</p>
+                        <a href="https://www.codechef.com/rankings/START18C?order=asc&search=saoge&sortBy=rank">Result</a>
+                        <img src="static/images/codechef.png" width="50" height="50">
+                    </li>
+
+                    <li>
+                        <p>LeetCode Weekly Contest 280 - Global Rank: 601/20923</p>
+                        <a href="https://leetcode.com/contest/weekly-contest-280/ranking/">Result</a>
+                        <img src="static/images/leetcode.png" width="50" height="50">
+                    </li>
+
+                    <li>
+                        <p>LeetCode Biweekly Contest 80 - Global Rank: 638/21911</p>
+                        <a href="https://leetcode.com/contest/biweekly-contest-80/ranking/">Result</a>
+                        <img src="static/images/leetcode.png" width="50" height="50">
+                    </li>
+
+                    <li>
+                        <p>Codeforces Round #790 - Global Rank: 1284/47565</p>
+                        <a href="https://codeforces.com/contest/1676/standings">Result</a>
+                        <img src="static/images/codeforces.png" width="200" height="25">
+                    </li>
+
+                    <li>
+                        <p>LeetCode Weekly Contest 289 - Global Rank: 728/18870</p>
+                        <a href="https://leetcode.com/contest/weekly-contest-289/ranking/">Result</a>
+                        <img src="static/images/leetcode.png" width="50" height="50">
+                    </li>
+
+                    <li>
+                        <p>LeetCode Biweekly Contest 73 - Global Rank: 692/18529</p>
+                        <a href="https://leetcode.com/contest/biweekly-contest-73/ranking/">Result</a>
+                        <img src="static/images/leetcode.png" width="50" height="50">
+                    </li>
+
+                    <li>
+                        <p>August Lunchtime 2021 Division 3 - Global Rank: 661</p>
+                        <a href="https://www.codechef.com/rankings/LTIME99C?order=asc&search=saoge&sortBy=rank">Result</a>
+                        <img src="static/images/codechef.png" width="50" height="50">
+                    </li>
+
+                    <li>
+                        <p>CodeChef Starters 14 Division 2 - Global Rank: 782</p>
+                        <a href="https://www.codechef.com/rankings/START14B?order=asc&search=saoge&sortBy=rank">Result</a>
+                        <img src="static/images/codechef.png" width="50" height="50">
+                    </li>
+
+                    <li>
+                        <p>Codeforces Round #792 - Global Rank: 1542/12816</p>
+                        <a href="https://codeforces.com/contest/1684/standings">Result</a>
+                        <img src="static/images/codeforces.png" width="200" height="25">
+                    </li>
+
+                    <li>
+                        <p>LeetCode Biweekly Contest 74 - Global Rank: 930/21911</p>
+                        <a href="https://leetcode.com/contest/biweekly-contest-74/ranking/">Result</a>
+                        <img src="static/images/leetcode.png" width="50" height="50">
+                    </li>
+
+                    <li>
+                        <p>LeetCode Weekly Contest 268 - Global Rank: 1318/11796</p>
+                        <a href="https://leetcode.com/contest/weekly-contest-268/ranking">Result</a>
+                        <img src="static/images/leetcode.png" width="50" height="50">
+                    </li>
+
+                    <li>
+                        <p>CCC Contest 2021 - 355th place (top 10%)</p>
+                        <a href="https://cemc.uwaterloo.ca/contests/past_contests/2021/2021CCCResults.pdf">Official Result</a>
+                        <img src="static/images/cemc.png" width="48" height="41.5">
+                    </li>
+
+                    <li>
+                        <p>SnackDown 2021 - Online Qualifiers - Global Rank: 1288</p>
+                        <a href="https://www.codechef.com/rankings/SNCKQL21?order=asc&search=saoge&sortBy=rank">Result</a>
+                        <img src="static/images/codechef.png" width="50" height="50">
+                    </li>
+
+                    <li>
+                        <p>SnackDown 2021 - Online Round 1A - Global Rank: 63</p>
+                        <a href="https://www.codechef.com/rankings/SNCK1A21?order=asc&search=saoge&sortBy=rank">Result</a>
+                        <img src="static/images/codechef.png" width="50" height="50">
+                    </li>
+
+                    <li>
+                        <p>C.O.D.E.R.S Division 2 - Global Rank: 883</p>
+                        <a href="https://www.codechef.com/rankings/FOUR21B?order=asc&search=saoge&sortBy=rank">Result</a>
+                        <img src="static/images/codechef.png" width="50" height="50">
+                    </li>
+
+                    <li>
+                        <p>LeetCode Weekly Contest 263 - Global Rank: 1268/11795</p>
+                        <a href="https://leetcode.com/contest/weekly-contest-263/ranking">Result</a>
+                        <img src="static/images/leetcode.png" width="50" height="50">
+                    </li>
+
+                    <li>
+                        <p>FizzBuzz Division 2 - Global Rank: 1543</p>
+                        <a href="https://www.codechef.com/rankings/FZBZ21B?order=asc&search=saoge&sortBy=rank">Result</a>
+                        <img src="static/images/codechef.png" width="50" height="50">
+                    </li>
+
+
+                </ul>
+            </div>
+            <br>
+            <h2>Math Contests</h2>
+            <div>
+                <ul>
+
+                    <li>
+                        <p>Canadian Senior Math Contest 2021 - 136th place (Top 1.1%)</p>
+                        <a href="https://cemc.uwaterloo.ca/contests/past_contests/2021/2021CxMCResults.pdf">Official Result</a>
+                        <img src="static/images/cemc.png" width="48" height="41.5">
+                    </li>
+
+                    <li>
+                        <p>Fermat Math Contest 2021 - 777th place (Top 5%)</p>
+                        <a href="https://cemc.uwaterloo.ca/contests/past_contests/2021/2021FermatResults.pdf">Official Result</a>
+                        <img src="static/images/cemc.png" width="48" height="41.5">
+                    </li>
+
+                    <li>
+                        <p>Hypatia Math Contest 2021 - 132th place (Top 1.8%)</p>
+                        <a href="https://cemc.uwaterloo.ca/contests/past_contests/2021/2021FGHResults.pdf">Official Result</a>
+                        <img src="static/images/cemc.png" width="48" height="41.5">
+                    </li>
+
+                    <li>
+                        <p>Euclid Math Contest 2021 - 502th place (Top 2.5%)</p>
+                        <a href="https://cemc.uwaterloo.ca/contests/past_contests/2021/2021EuclidResults.pdf">Official Result</a>
+                        <img src="static/images/cemc.png" width="48" height="41.5">
+                    </li>
+
+                </ul>
+            </div>
+        </div>
 
     </body>
 </html>

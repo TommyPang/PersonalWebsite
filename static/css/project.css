@@ -1,0 +1,209 @@
+/* Default styles starts */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #fafff1;
+}
+header {
+    background: #fafff1;
+
+    padding: 20px;
+}
+/* Default styles ends */
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Project styles */
+.project {
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.project p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.project .technologies {
+    margin-bottom: 20px;
+}
+
+.project .technologies h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.project .technologies ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project .technologies li {
+    font-size: 18px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+}
+
+.project .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project .links a {
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.project .links a:hover {
+    text-decoration: underline;
+}
+
+.project img {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .project h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .project p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .project .technologies h3 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .project .technologies li {
+        font-size: 16px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+        padding: 5px;
+    }
+
+    .project img {
+        margin-bottom: 10px;
+    }
+}
+
+/* Navigation Bar styles starts */
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #0077cc;
+}
+/* Navigation Bar styles ends */
+
+
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+    display: none;
+}
+/*HAMBURGER MENU*/
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+    .menu {
+        display:none;
+        position: absolute;
+        background-color: #f1f1f1;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+        margin-top: 1%;
+    }
+    .menu li:hover {
+        display: inline-block;
+        background-color: #f1f1f1;
+        transition: 0.3s ease;
+    }
+    .menu li + li {
+        margin-top: 12px;
+    }
+    input[type=checkbox]:checked ~ .menu{
+        display: block;
+
+    }
+    .hamburger {
+        display: block;
+        padding-top: 20px;
+    }
+
+    .card {
+        width: 90%;
+        margin: auto auto auto auto;
+    }
+}
+/*RESPONSIVE NAVBAR MENU ENDS*/

@@ -14,68 +14,44 @@
 
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <!-- LOGO -->
-            <div class="logo">Tommy Pang</div>
-            <!-- NAVIGATION MENU -->
-            <ul class="nav-links" style="padding-right: 10%;">
-                <!-- USING CHECKBOX HACK -->
-                <input type="checkbox" id="checkbox_toggle" />
-                <label for="checkbox_toggle" class="hamburger" onclick="f()">&#9776;</label>
-                <!-- NAVIGATION MENUS -->
-                <div class="menu">
-                    <li><a href="index.html"> Home </a></li>
-                    <li><a href="publications.html"> Publications </a></li>
-                    <li><a href="contests.html"> Contests </a></li>
-                    <li><a href="Tommy_s_Resume.pdf"> Resume </a></li>
-                    <li><a href="#"> Blog </a></li>
-                </div>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <input type="checkbox" id="checkbox_toggle" />
+    <label for="checkbox_toggle" class="hamburger" onclick="f()">&#9776;</label>
+    <nav class="menu">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="project.html">Projects</a>
+        <a href="contests.html">Contests</a>
+        <a href="publications.html">Publications</a>
+    </nav>
+</header>
 
     <div class="main">
-        <h1 class="title">Publications</h1>
+        <h2>Publications</h2>
+        <br>
+        <ul>
+            <li>
+                <h4>Dynamic Web Page Scraping with Node.js and Puppeteer</h4>
+                <p>Nowadays, most websites has embedded JavaScript scripts, so traditional type of web scraping no longer works. In this post I gave an introduction and a demo of how we many use the Puppeteer as a headless browser to fetch content that we want in Node.js</p>
+                <p>Oct 27, 2021</p>
+                <a href="https://medium.com/@tommypang04/dynamic-web-page-scraping-with-node-js-and-puppeteer-4af7a88ca0c6">Read more</a>
+            </li>
+            <li>
+                <h4>A Simple Calculator Implemented With JavaScript That Evaluates String Expressions</h4>
+                <p>This article introduces how we may use Divide and Conquer algorithm to support the evaluation of arithmetic operations (with brackets)</p>
+                <p>Oct 23, 2021</p>
+                <a href="https://medium.com/@tommypang04/a-simple-calculator-that-evaluates-elementary-arithmetic-expressions-with-javascript-bca12de61aea">Read more</a>
+            </li>
+            <li>
+                <h4>Static Web Page Scraping With Node.js</h4>
+                <p>This article talks about scraping (getting info from) a static web pageusing request promise and cheerio</p>
+                <p>Sep 27, 2021</p>
+                <a href="https://medium.com/@tommypang04/static-web-page-scraping-with-node-js-fd2f0a0d9c37">Read more</a>
+            </li>
+        </ul>
 
-        <div class="articles_list">
-
-            <div class="article_item">
-                <h3><a href="https://medium.com/@tommypang04/static-web-page-scraping-with-node-js-fd2f0a0d9c37"> Static Web Page Scraping With Node.js</a></h3>
-                <i class="far fa-clock"> 4 min read </i>
-            </div>
-            <br>
-            <div class="article_item">
-                <h3><a href="https://medium.com/@tommypang04/a-simple-calculator-that-evaluates-elementary-arithmetic-expressions-with-javascript-bca12de61aea"> A Simple Calculator Implemented With Javascript That Evaluates String Expressions </a></h3>
-                <i class="far fa-clock"> 7 min read </i>
-            </div>
-            <br>
-            <div class="article_item">
-                <h3><a href="https://medium.com/@tommypang04/dynamic-web-page-scraping-with-node-js-and-puppeteer-4af7a88ca0c6"> Dynamic Web Page Scraping with Node.js and Puppeteer</a></h3>
-                <i class="far fa-clock"> 9 min read </i>
-            </div>
-        </div>
     </div>
 
-    <div class="copyright-section">
-        <footer class="copyright-text">
-            <div>
-                <p>© Copyright 2022 Tommy Pang</p>
-            </div>
-        </footer>
-    </div>
-
-    <!--<script>
-        function f() {
-            var top = parseInt( $(".main").css("marginTop") );
-            if (top===30) {
-                $('.main').css('margin-top', 300);
-            }
-            else {
-                $('.main').css('margin-top', 30);
-            }
-        }
-    </script>-->
 
 </body>
 </html>

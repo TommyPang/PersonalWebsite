@@ -8,7 +8,7 @@ addEventListener('DOMContentLoaded', () => {
 function f() {
     var top = parseInt( $(".main").css("marginTop") );
     if (top===30) {
-        $('.main').css('margin-top', 300);
+        $('.main').css('margin-top', 50);
     }
     else {
         $('.main').css('margin-top', 30);
