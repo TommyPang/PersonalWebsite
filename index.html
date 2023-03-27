@@ -1,77 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Tommy Pang</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="static/css/index.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="static/css/index.css">
     <link rel="shortcut icon" type="image/jpg" href="static/images/avatar.jpg"/>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="static/js/navbar.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="static/js/navbar.js"></script>
-</head>
-<body>
-
-    <header class="header">
-        <nav class="navbar">
-            <!-- LOGO -->
-            <div class="logo">Tommy Pang</div>
-            <!-- NAVIGATION MENU -->
-            <ul class="nav-links" style="padding-right: 10%;">
-                <!-- USING CHECKBOX HACK -->
-                <input type="checkbox" id="checkbox_toggle" />
-                <label for="checkbox_toggle" class="hamburger" onclick="f()">&#9776;</label>
-                <!-- NAVIGATION MENUS -->
-                <div class="menu">
-                    <li><a href="index.html"> Home </a></li>
-                    <li><a href="publications.html"> Publications </a></li>
-                    <li><a href="contests.html"> Contests </a></li>
-                    <li><a href="Tommy_s_Resume.pdf"> Resume </a></li>
-                    <li><a href="#"> Blog </a></li>
-                </div>
-            </ul>
-        </nav>
+  </head>
+  <body>
+    <header>
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger" onclick="f()">&#9776;</label>
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="project.html">Projects</a>
+        <a href="contests.html">Contests</a>
+        <a href="publications.html">Publications</a>
+      </nav>
     </header>
 
-    <div class="main">
-        <div class="card">
+    <div id="particles-js"></div>
 
-            <div class="card-body">
-                <!--img src="static/images/avatar.jpg" class="avatar"-->
-                <h1 style="text-align: center">Tommy Pang</h1> <br>
-                <h3 style="text-align: center">Student @ University of Waterloo</h3>
-                <br>
-                <p class="card-text">Hello! I am Tommy Pang!</p>
-                <p class="card-text">Currently a first year student at University of Waterloo who is passionate about Computer Science.
-                    Interested in various subject matters such as Mathematics, Computer Sciences, and Physics, and hope to pursue a degree and a future career in the technology industry.</p>
-                <hr>
-                <p class="card-text">Throughout my elementary and high school years, I have received series of academic awards,
-                    e.g., Merit Student of Beijing, Merit Student of Xicheng district, academic honour roll, as well as English subject award at UHS</p>
-                <hr>
-                <p class="card-text">Beside school studying, I have participated in many mathematics and coding contests. I have achieved some decent results,
-                    which can be found by clicking the <a href="contests.html"> CONTEST HISTORY </a>.</p>
-                <hr>
-                <p class="card-text">I also have hands-on experiences of building and developing full-stack projects. The frameworks and languages that I'm familiar with can be found in the <a href="Tommy_s_Resume.pdf"> RESUME </a>.</p>
-                <hr>
-                <p class="card-text">In my spare time, I enjoy playing sports, such as tennis, basketball, and soccer. I got the champion of YRAA tennis game on behalf of UHS, as well as the champion of MTC Junior Open.</p>
-            </div>
+    <main class="main">
+      <div class="hero">
+        <h1>Tommy Pang</h1>
+        <h2>Math Student @ UWaterloo</h2>
+      </div>
+    </main>
 
-            <div class="icon_list">
-                <a href="https://github.com/TommyPang" class="icon"><i class="fab fa-github"></i> GitHub </a>
-                <a href="https://www.linkedin.com/in/tommy-pang-271a99210/" class="icon"><i class="fab fa-linkedin"></i> LinkedIn </a>
-            </div>
+    <script src="static/js/home.js"></script>
+  </body>
 
-        </div>
-    </div>
 
-    <div class="copyright-section">
-        <footer class="copyright-text">
-            <div>
-                <p>© Copyright 2023 Tommy Pang</p>
-            </div>
-        </footer>
-    </div>
-</body>
 </html>
